@@ -1,0 +1,42 @@
+*{
+    margin:0px;
+    padding:0px;
+  }
+  
+  
+  .navbar{
+  text-align:center;
+  background-color:rgba(51,204,51,0.6);
+  }
+  
+  .navbar h1{
+  padding:10px;
+  }
+  
+  .a{
+  border:2px solid grey;
+  background-color:rgba(0,255,128);
+  text-align:center;
+  width:400px;
+  height:550px;
+  left:400px;
+  margin:20px;
+  padding:10px;
+  position:relative;
+  border-radius: 20px;;
+  }
+  
+  .frm{
+  width:250px;
+  height:24px;
+  margin:15px;
+  
+  }
+  
+  .button{
+  float:center;
+  margin:10px;
+  padding:10px 30px;
+  border-radius:30px;
+  background-color:grey;
+  }

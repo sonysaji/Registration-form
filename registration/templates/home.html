@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<head>
+<title> HOME</title>
+    {% load static %}
+    <link rel="stylesheet"  href="{% static 'style.css'%}">
+
+<style></style>
+</head>
+	<body class="bi">
+	<div class="navbar">
+		<h1> EMPLOYEE REGISTRATION FORM</h1>
+	</div>
+
+	<div class="a">
+	<h2> Register here</h2>
+	<form action="{% url 'user' %}" method="POST">
+        {% csrf_token %}
+        <table>
+	    <tr><td>First name:</td>
+		<td><input type="Text" class="frm" name="first_name"></td></tr>
+		<tr><td>Last name:</td>
+        <td><input type="Text" class="frm" name="last_name"></td></tr>
+        <tr><td>Mobile:</td>
+        <td><input type="Text" class="frm" name="mobile"></td></tr>
+        <tr><td>Email:</td>
+        <td><input type="Text" class="frm" name="email"></td></tr>
+		<tr><td> Gender:</td>
+        <td><input type="Text" class="frm" name="gender"></td></tr>
+        <tr><td>Password:</td>
+        <td><input type="Text" class="frm" name="password"></td></tr>
+       <!-- Gender:
+		<input type="Radio" class="button"> Male
+        <input type="Radio" class="button"> Female<br>-->
+        <tr><td>Re-enter Password:</td>
+        <td><input type="Text" class="frm" name="re-enter_password"></td></tr>
+        </table>
+		<input type="Reset" class="button" name="reset">
+		<input type="Submit" class="button" name="submit">
+        
+    </form>
+    <a href="{% url 'user'%}">View All Users</a>
+	</div>
+	</body>
+
+</html>
